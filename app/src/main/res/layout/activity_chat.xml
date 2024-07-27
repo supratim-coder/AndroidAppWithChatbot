@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/other_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/my_secondary"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/profile_pic_layout"/>
+        <include layout="@layout/profile_pic_view"
+            android:id="@+id/profile_pic_layout"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/back_btn"/>
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/icon_back"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="@color/my_secondary"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/bottom_layout"
+        android:background="@color/my_primary"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:background="@color/my_primary"
+        android:id="@+id/bottom_layout">
+        <EditText
+            android:id="@+id/chat_message_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write Message Here"
+            android:textColorHint="@color/light_gray"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_chat_input"
+            android:padding="10dp"
+            android:elevation="4dp"
+            android:layout_toLeftOf="@id/message_send_btn"/>
+        <ImageButton
+            android:id="@+id/message_send_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/sending_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="@color/my_secondary"
+            android:padding="8dp"
+            android:layout_marginStart="10dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

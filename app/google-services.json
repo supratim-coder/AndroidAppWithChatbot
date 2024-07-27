@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "380689014992",
+    "project_id": "gupshup-ef2ac",
+    "storage_bucket": "gupshup-ef2ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380689014992:android:af5cbff95ddb65cf8c3ed5",
+        "android_client_info": {
+          "package_name": "com.example.gupshup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf_2xcAaAalNe6zOBhAmvgDJePltfehOY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
