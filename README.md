@@ -9,6 +9,9 @@ Android Mobile Application built with java on Android Studio. It is integrated w
 The following shows the demo of how the applications works
 
 
+https://github.com/user-attachments/assets/f018e564-fbe0-4efa-93bf-a69da53fea48
+
+
 ## Documentation
 
 Follow this 
